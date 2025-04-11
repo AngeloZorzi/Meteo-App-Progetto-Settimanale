@@ -42,12 +42,15 @@ const WeatherCard = ({ city }) => {
         <Card.Body className="p-4">
           <Card.Title className="weather-card-title text-center mb-3">
             {weather.name}
+          </Card.Title>
+          <div className=" d-flex justify-content-center">
             <img
               src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
               alt={weather.weather[0].description}
               className="weather-icon"
             />
-          </Card.Title>
+          </div>
+
           <Card.Text className="weather-card-text text-center">
             <span className="temperature">{weather.main.temp}°C</span>
             <br />
@@ -65,7 +68,7 @@ const WeatherCard = ({ city }) => {
           </Card.Text>
           <div className="weather-card-buttons d-flex justify-content-around mt-4">
             <Button
-              variant="outline-primary"
+              variant="outline-light"
               size="sm"
               onClick={() => navigate(`/dettagli/${city}`)}
             >

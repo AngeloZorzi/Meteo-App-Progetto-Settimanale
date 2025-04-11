@@ -20,13 +20,13 @@ function App() {
           <Route
             path="/"
             element={
-              <Container>
+              <Container fluid>
                 <h3 className="text-center fw-bold m-3">
                   Most Searched Locations
                 </h3>
-                <Row>
+                <Row className=" justify-content-center">
                   <WeatherCard city="Ospitaletto" />
-                  <WeatherCard city="Gaza" />
+                  <WeatherCard city="Bagolino" />
                   <WeatherCard city="Atlanta" />
                   <WeatherCard city="Cape North" />
                 </Row>{" "}

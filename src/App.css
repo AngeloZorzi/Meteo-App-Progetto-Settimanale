@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+body {
+  background-color: #a5d5f5;
+  font-family: "Roboto", sans-serif;
+}
+h3 {
+  color: #43423d;
+  font-weight: 500;
+}
 /* Sezione card */
 
 .soft-background {
@@ -42,12 +51,10 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   color: #fff;
-  flex: 1 1 300px;
+
   object-fit: contain;
   min-height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
   max-width: 350px;
 }
 
@@ -89,14 +96,14 @@
 
 .condition {
   font-size: 1.1rem;
-  color: #7f8c8d;
+  color: #d7e1e1;
   font-style: italic;
 }
 
 .humidity,
 .wind {
   font-size: 0.95rem;
-  color: #7f8c8d;
+  color: #d7e1e1;
 }
 
 .weather-card-title svg {
@@ -109,7 +116,7 @@
 }
 
 .weather-card-buttons .btn-outline-info {
-  color: #2980b9;
+  color: #96c5e4;
   border-color: #2980b9;
 }
 
@@ -156,7 +163,7 @@
   height: 35px !important;
   margin-right: 12px !important;
   filter: brightness(0) invert(1) !important;
-  transition: transform 0.3s ease, filter 0.3s ease !important;
+  transition: transform 10s ease, filter 5s ease !important;
 }
 
 .navbar .navbar-brand:hover img {
@@ -166,8 +173,7 @@
 
 .navbar .nav-link {
   color: #f2f2f2 !important;
-  font-size: 1.1rem !important;
-  margin-left: 30px !important;
+
   text-transform: uppercase !important;
   letter-spacing: 1px !important;
   font-weight: 500 !important;
@@ -191,4 +197,11 @@
 }
 .gino {
   background-color: linear-gradient(90deg, #2980b9, #00bcd4) !important;
+}
+.custom-bg {
+  background-color: #96c5e4;
+}
+.forecast {
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
