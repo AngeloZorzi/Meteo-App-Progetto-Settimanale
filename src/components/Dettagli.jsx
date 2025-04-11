@@ -89,7 +89,7 @@ const Dettagli = () => {
           </Card.Text>
 
           <div className="weather-card-buttons d-flex justify-content-around mt-4">
-            <Button variant="secondary" onClick={() => navigate(-1)}>
+            <Button variant="secondary" onClick={() => navigate("/")}>
               Torna indietro
             </Button>
           </div>

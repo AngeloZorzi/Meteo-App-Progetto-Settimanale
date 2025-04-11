@@ -118,7 +118,7 @@ const WeatherDashboard = () => {
           value={cityInput}
           onChange={(e) => setCityInput(e.target.value)}
         />
-        <Button variant="primary" type="submit">
+        <Button variant="outline-info" type="submit">
           <Search />
         </Button>
       </Form>
