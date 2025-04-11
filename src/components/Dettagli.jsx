@@ -95,7 +95,7 @@ const Dettagli = () => {
 
         <Card className="shadow-sm rounded-4 weather-card soft-colors forecast">
           <Card.Body className="p-4">
-            <Card.Title className="weather-card-title text-center mb-3">
+            <Card.Title className="weather-card-title text-center mb-3 fs-2">
               Previsioni per i prossimi 5 giorni
             </Card.Title>
             <ListGroup>
