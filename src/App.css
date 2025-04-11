@@ -186,4 +186,32 @@ h3 {
 .forecast {
   overflow-y: scroll;
   scrollbar-width: none;
+
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.199);
+  color: #fff;
+
+  object-fit: contain;
+  max-height: 350px;
+  min-height: 350px;
+
+  max-width: 350px;
+}
+.detcard {
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.199);
+  color: #fff;
+
+  object-fit: contain;
+  max-height: 350px;
+  min-height: 350px;
+
+  max-width: 350px;
 }
