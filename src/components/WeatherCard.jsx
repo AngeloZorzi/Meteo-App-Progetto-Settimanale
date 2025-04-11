@@ -37,7 +37,7 @@ const WeatherCard = ({ city }) => {
   if (error) return <p className="weather-error-text">{error}</p>;
 
   return (
-    <Col xs={12} md={4} lg={3} key={city}>
+    <Col xs={12} sm={6} md={4} lg={3} key={city}>
       <Card className="mb-4 shadow-sm rounded-4 weather-card soft-colors">
         <Card.Body className="p-4">
           <Card.Title className="weather-card-title text-center mb-3">
