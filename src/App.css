@@ -1,42 +1,194 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Sezione card */
+
+.soft-background {
+  background: #f1f9fc;
+}
+
+.city-input {
+  max-width: 300px;
+  border-radius: 12px;
+  border: 1px solid #b0c4de;
+  transition: all 0.2s ease-in-out;
+}
+
+.city-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(100, 149, 237, 0.25);
+}
+
+.weather-spinner {
+  display: block;
+  margin: 2rem auto;
+}
+
+.weather-error-text {
+  color: #e74c3c;
   text-align: center;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.weather-dashboard {
+  background: #e0f7fa;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-card {
+  background: #00bcd4;
+  border-radius: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  flex: 1 1 300px;
+  object-fit: contain;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 350px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.weather-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
 }
 
-.card {
-  padding: 2em;
+.weather-card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.read-the-docs {
-  color: #888;
+.weather-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.weather-card-text {
+  font-size: 1.1rem;
+  color: #555555;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2980b9;
+}
+
+.condition {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.humidity,
+.wind {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+}
+
+.weather-card-title svg {
+  color: #2980b9;
+}
+
+.weather-card-buttons button {
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.weather-card-buttons .btn-outline-info {
+  color: #2980b9;
+  border-color: #2980b9;
+}
+
+.weather-card-buttons .btn-outline-info:hover {
+  background-color: #2980b9;
+  color: white;
+}
+
+.weather-card-buttons .btn-outline-danger {
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.weather-card-buttons .btn-outline-danger:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(90deg, #00bcd4, #2980b9) !important;
+  padding: 15px 40px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3) !important;
+
+  width: 100% !important;
+
+  transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.navbar .navbar-brand {
+  font-family: "Roboto", sans-serif !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1.6rem !important;
+  letter-spacing: 2px !important;
+  display: flex !important;
+  align-items: center !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar .navbar-brand img {
+  height: 35px !important;
+  margin-right: 12px !important;
+  filter: brightness(0) invert(1) !important;
+  transition: transform 0.3s ease, filter 0.3s ease !important;
+}
+
+.navbar .navbar-brand:hover img {
+  transform: scale(1.15) !important;
+  filter: brightness(1.2) !important;
+}
+
+.navbar .nav-link {
+  color: #f2f2f2 !important;
+  font-size: 1.1rem !important;
+  margin-left: 30px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  font-weight: 500 !important;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease !important;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff !important;
+  transform: translateY(-3px) !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6) !important;
+}
+
+.navbar-toggler {
+  border-color: #ffffff !important;
+  background-color: linear-gradient(90deg, #2980b9, #00bcd4) !important;
+}
+
+.navbar:hover {
+  background: linear-gradient(90deg, #2980b9, #00bcd4) !important;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.4) !important;
+}
+.gino {
+  background-color: linear-gradient(90deg, #2980b9, #00bcd4) !important;
 }
