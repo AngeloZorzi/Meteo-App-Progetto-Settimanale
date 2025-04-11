@@ -29,8 +29,7 @@ const Dettagli = () => {
         setLoading(false);
       })
       .catch(() => {
-        setError("Errore nel recupero dei dettagli");
-        setLoading(false);
+        navigate("/notfound");
       });
     fetch(
       `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${token}&units=metric`

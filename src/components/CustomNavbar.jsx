@@ -10,7 +10,7 @@ function CustomNavbar() {
         <Container fluid>
           <Navbar.Brand href="#">
             Meteo App
-            <img src=" /public/sun.png" alt="" className="ms-2" />
+            <img src="/sun.png" alt="" className="ms-2" />
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
