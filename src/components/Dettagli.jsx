@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Container, Card, Spinner, Button, ListGroup } from "react-bootstrap";
-import { CloudSun, Droplets, Wind } from "lucide-react";
+import { Droplets, Wind } from "lucide-react";
 
 const token = "70d19afe684454ee5a969711733823ef";
 
